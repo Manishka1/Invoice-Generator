@@ -328,21 +328,24 @@ const InvoiceForm = () => {
             style={{ flex: 1 }}
           />
           <Input 
-            name="unitPrice" 
-            type="number" 
-            value={item.unitPrice} 
-            onChange={(e) => handleItemChange(i, e)} 
-            placeholder="Unit Price" 
-            style={{ flex: 1 }}
-          />
-          <Input 
-            name="discount" 
-            type="number" 
-            value={item.discount} 
-            onChange={(e) => handleItemChange(i, e)} 
-            placeholder="Discount" 
-            style={{ flex: 1 }}
-          />
+  name="unitPrice" 
+  type="number" 
+  value={item.unitPrice} 
+  onChange={(e) => handleItemChange(i, e)} 
+  placeholder="Unit Price" 
+  style={{ flex: 1 }}
+  step="0.01" // Allows up to two decimal places
+/>
+
+<Input 
+  name="discount" 
+  type="number" 
+  value={item.discount} 
+  onChange={(e) => handleItemChange(i, e)} 
+  placeholder="Discount" 
+  style={{ flex: 1 }}
+  step="0.01" // Allows up to two decimal places
+/>
           <Input 
             type="text" 
             readOnly 
