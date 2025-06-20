@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for API calls
-const BASE_URL = `${process.env.REACT_APP_API_URL}/api/invoices`;
+const BASE_URL = `${process.env.REACT_APP_API_URL}`;
 
 
 // Create a configured axios instance
