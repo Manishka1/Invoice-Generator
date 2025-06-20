@@ -112,7 +112,7 @@ const InvoiceForm = () => {
     serialNumber: '',  // Adding serialNumber to state
     invoiceTo: [{ company: '', address: '', gst: '' }],
     reportTo: { useSame: false, company: '', address: '', gst: '' },
-    items: [{ description: '', quantity: 1, unitPrice: 0.00, discount: 0.00 }]
+    items: [{ description: '', quantity: 1, unitPrice: 0, discount: 0 }]
   });
 
   const [createdInvoice, setCreatedInvoice] = useState(null);
@@ -330,7 +330,7 @@ const InvoiceForm = () => {
           <Input 
   name="unitPrice" 
   type="number" 
-  value={item.unitPrice.toFixed(2)} 
+  value={item.unitPrice} 
   onChange={(e) => handleItemChange(i, e)} 
   placeholder="Unit Price" 
   style={{ flex: 1 }}
@@ -340,7 +340,7 @@ const InvoiceForm = () => {
 <Input 
   name="discount" 
   type="number" 
-  value={item.discount.toFixed(2)} 
+  value={item.discount} 
   onChange={(e) => handleItemChange(i, e)} 
   placeholder="Discount" 
   style={{ flex: 1 }}
