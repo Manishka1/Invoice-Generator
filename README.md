@@ -12,11 +12,16 @@ MongoDB: NoSQL database for storing invoices.
 Mongoose: ODM for MongoDB to streamline interactions.
 pdfkit: Library for generating PDF documents.
 Installation
+
+# Live Link
+
+https://invoice-generator-flame-alpha.vercel.app/
+
 # Clone the Repository:
 
 BASH
 
-git clone https://github.com/Manishka1/invoice-management.git
+git clone https://github.com/Manishka1/invoice-Generator.git
 cd invoice-management
 Install Dependencies:
 
